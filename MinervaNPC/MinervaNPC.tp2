@@ -15,7 +15,7 @@ LANGUAGE
   ~%MOD_FOLDER%/tra/english/setup.tra~
 		 
 BEGIN ~Minerva NPC for Icewind Dale: Enhanced Edition~
-  REQUIRE_PREDICATE (GAME_IS ~iwdee~) ~This component must be installed on IWD:EE.~
+  REQUIRE_PREDICATE (GAME_IS ~iwdee~ OR (GAME_IS ~eet~ AND FILE_EXISTS_IN_GAME ~id1000.are~)) ~This component must be installed on IWD:EE or on EET after IWD1_EET.~
 COPY ~%MOD_FOLDER%/2da~ ~override~
 COPY ~%MOD_FOLDER%/areas~ ~override~
 COPY ~%MOD_FOLDER%/bams~ ~override~

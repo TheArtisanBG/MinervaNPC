@@ -22,7 +22,7 @@ StartDialogueNoSet([PC])~ EXIT
 
 CHAIN IF WEIGHT #-1 ~Global("C0MMinBegin","GLOBAL",2)~ THEN C0MMin MINERVA-BEGIN
 ~Ha ha, did you like my little display of acrobatics? I apologize if my presence on the roof shocked you.~ [C0BLANK]
-DO ~SetGlobal("C0MMinBegin","GLOBAL",3)~
+DO ~SetGlobal("C0MMinBegin","GLOBAL",3) EndCutSceneMode()~
 END
 ++ ~That's alright. Might I know your name, though?~ + MINERVA-1
 ++ ~Quite a singing voice you have.~ + MINERVA-2
